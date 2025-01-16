@@ -34,7 +34,7 @@ if ($responseData->success) {
             VALUES ('$nama', '$email', '$perusahaan', '$telepon', '$pesan')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "<h2>Pesan Anda berhasil dikirim! Terima kasih telah menghubungi kami.</h2>";
+        echo "<h2>Informasi anda telah kami terima! Terima kasih telah menghubungi kami.</h2>";
     } else {
         echo "<h2>Terjadi kesalahan: " . $conn->error . "</h2>";
     }
